@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Product]
+(
+	[ProductID] INT IDENTITY NOT NULL, 
+    [Type] NVARCHAR(30) NULL, 
+    [ForAge] NVARCHAR(20) NULL,
+	PRIMARY KEY CLUSTERED ([ProductID] ASC)
+)
