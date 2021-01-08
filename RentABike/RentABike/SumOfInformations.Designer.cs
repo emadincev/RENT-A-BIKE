@@ -29,6 +29,7 @@ namespace RentABike
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SumOfInformations));
             this.labelInformation = new System.Windows.Forms.Label();
             this.labelDateRent = new System.Windows.Forms.Label();
             this.labelDate = new System.Windows.Forms.Label();
@@ -44,18 +45,20 @@ namespace RentABike
             // labelInformation
             // 
             this.labelInformation.AutoSize = true;
-            this.labelInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInformation.Location = new System.Drawing.Point(257, 68);
+            this.labelInformation.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInformation.Location = new System.Drawing.Point(219, 49);
             this.labelInformation.Name = "labelInformation";
-            this.labelInformation.Size = new System.Drawing.Size(306, 25);
+            this.labelInformation.Size = new System.Drawing.Size(446, 36);
             this.labelInformation.TabIndex = 0;
             this.labelInformation.Text = "INFORMATION ABOUT RENT";
             // 
             // labelDateRent
             // 
             this.labelDateRent.AutoSize = true;
+            this.labelDateRent.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelDateRent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDateRent.Location = new System.Drawing.Point(137, 141);
+            this.labelDateRent.Location = new System.Drawing.Point(302, 139);
             this.labelDateRent.Name = "labelDateRent";
             this.labelDateRent.Size = new System.Drawing.Size(94, 20);
             this.labelDateRent.TabIndex = 1;
@@ -65,7 +68,7 @@ namespace RentABike
             // 
             this.labelDate.AutoSize = true;
             this.labelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDate.Location = new System.Drawing.Point(365, 141);
+            this.labelDate.Location = new System.Drawing.Point(510, 139);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(0, 20);
             this.labelDate.TabIndex = 2;
@@ -73,8 +76,9 @@ namespace RentABike
             // labelTime
             // 
             this.labelTime.AutoSize = true;
+            this.labelTime.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTime.Location = new System.Drawing.Point(137, 197);
+            this.labelTime.Location = new System.Drawing.Point(302, 195);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(50, 20);
             this.labelTime.TabIndex = 3;
@@ -84,7 +88,7 @@ namespace RentABike
             // 
             this.labelSelectedTime.AutoSize = true;
             this.labelSelectedTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSelectedTime.Location = new System.Drawing.Point(365, 197);
+            this.labelSelectedTime.Location = new System.Drawing.Point(510, 195);
             this.labelSelectedTime.Name = "labelSelectedTime";
             this.labelSelectedTime.Size = new System.Drawing.Size(0, 20);
             this.labelSelectedTime.TabIndex = 4;
@@ -92,8 +96,9 @@ namespace RentABike
             // labelTypeOfProduct
             // 
             this.labelTypeOfProduct.AutoSize = true;
+            this.labelTypeOfProduct.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelTypeOfProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTypeOfProduct.Location = new System.Drawing.Point(137, 247);
+            this.labelTypeOfProduct.Location = new System.Drawing.Point(302, 245);
             this.labelTypeOfProduct.Name = "labelTypeOfProduct";
             this.labelTypeOfProduct.Size = new System.Drawing.Size(146, 20);
             this.labelTypeOfProduct.TabIndex = 5;
@@ -103,7 +108,7 @@ namespace RentABike
             // 
             this.labelType.AutoSize = true;
             this.labelType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelType.Location = new System.Drawing.Point(365, 247);
+            this.labelType.Location = new System.Drawing.Point(510, 245);
             this.labelType.Name = "labelType";
             this.labelType.Size = new System.Drawing.Size(0, 20);
             this.labelType.TabIndex = 6;
@@ -111,8 +116,9 @@ namespace RentABike
             // labelTotalPrice
             // 
             this.labelTotalPrice.AutoSize = true;
+            this.labelTotalPrice.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalPrice.Location = new System.Drawing.Point(137, 303);
+            this.labelTotalPrice.Location = new System.Drawing.Point(302, 301);
             this.labelTotalPrice.Name = "labelTotalPrice";
             this.labelTotalPrice.Size = new System.Drawing.Size(101, 20);
             this.labelTotalPrice.TabIndex = 7;
@@ -122,7 +128,7 @@ namespace RentABike
             // 
             this.labelTotal.AutoSize = true;
             this.labelTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotal.Location = new System.Drawing.Point(365, 303);
+            this.labelTotal.Location = new System.Drawing.Point(510, 301);
             this.labelTotal.Name = "labelTotal";
             this.labelTotal.Size = new System.Drawing.Size(0, 20);
             this.labelTotal.TabIndex = 8;
@@ -130,7 +136,7 @@ namespace RentABike
             // buttonRent
             // 
             this.buttonRent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRent.Location = new System.Drawing.Point(324, 362);
+            this.buttonRent.Location = new System.Drawing.Point(397, 373);
             this.buttonRent.Name = "buttonRent";
             this.buttonRent.Size = new System.Drawing.Size(133, 46);
             this.buttonRent.TabIndex = 9;
@@ -142,7 +148,8 @@ namespace RentABike
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(862, 475);
             this.Controls.Add(this.buttonRent);
             this.Controls.Add(this.labelTotal);
             this.Controls.Add(this.labelTotalPrice);
@@ -153,6 +160,7 @@ namespace RentABike
             this.Controls.Add(this.labelDate);
             this.Controls.Add(this.labelDateRent);
             this.Controls.Add(this.labelInformation);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SumOfInformations";
             this.Text = "SumOfInformations";
             this.ResumeLayout(false);

@@ -29,6 +29,7 @@ namespace RentABike
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             this.labelName = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.labelSurname = new System.Windows.Forms.Label();
@@ -48,7 +49,7 @@ namespace RentABike
             // 
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(36, 66);
+            this.labelName.Location = new System.Drawing.Point(36, 42);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(57, 20);
             this.labelName.TabIndex = 0;
@@ -57,7 +58,7 @@ namespace RentABike
             // textBoxName
             // 
             this.textBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxName.Location = new System.Drawing.Point(155, 63);
+            this.textBoxName.Location = new System.Drawing.Point(155, 39);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(247, 27);
             this.textBoxName.TabIndex = 1;
@@ -66,7 +67,7 @@ namespace RentABike
             // 
             this.labelSurname.AutoSize = true;
             this.labelSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSurname.Location = new System.Drawing.Point(36, 110);
+            this.labelSurname.Location = new System.Drawing.Point(36, 95);
             this.labelSurname.Name = "labelSurname";
             this.labelSurname.Size = new System.Drawing.Size(83, 20);
             this.labelSurname.TabIndex = 2;
@@ -75,7 +76,7 @@ namespace RentABike
             // textBoxSurname
             // 
             this.textBoxSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSurname.Location = new System.Drawing.Point(155, 107);
+            this.textBoxSurname.Location = new System.Drawing.Point(155, 92);
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(247, 27);
             this.textBoxSurname.TabIndex = 3;
@@ -84,7 +85,7 @@ namespace RentABike
             // 
             this.labelAddress.AutoSize = true;
             this.labelAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAddress.Location = new System.Drawing.Point(36, 155);
+            this.labelAddress.Location = new System.Drawing.Point(36, 148);
             this.labelAddress.Name = "labelAddress";
             this.labelAddress.Size = new System.Drawing.Size(78, 20);
             this.labelAddress.TabIndex = 4;
@@ -93,7 +94,7 @@ namespace RentABike
             // textBoxAddress
             // 
             this.textBoxAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAddress.Location = new System.Drawing.Point(155, 152);
+            this.textBoxAddress.Location = new System.Drawing.Point(155, 145);
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(247, 27);
             this.textBoxAddress.TabIndex = 5;
@@ -120,7 +121,7 @@ namespace RentABike
             // 
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.Location = new System.Drawing.Point(36, 251);
+            this.labelEmail.Location = new System.Drawing.Point(36, 259);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(56, 20);
             this.labelEmail.TabIndex = 8;
@@ -129,7 +130,7 @@ namespace RentABike
             // textBoxEmail
             // 
             this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEmail.Location = new System.Drawing.Point(155, 248);
+            this.textBoxEmail.Location = new System.Drawing.Point(155, 256);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(247, 27);
             this.textBoxEmail.TabIndex = 9;
@@ -138,7 +139,7 @@ namespace RentABike
             // 
             this.labelPassword.AutoSize = true;
             this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPassword.Location = new System.Drawing.Point(36, 300);
+            this.labelPassword.Location = new System.Drawing.Point(36, 316);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(91, 20);
             this.labelPassword.TabIndex = 10;
@@ -147,7 +148,7 @@ namespace RentABike
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(155, 297);
+            this.textBoxPassword.Location = new System.Drawing.Point(155, 313);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(247, 27);
             this.textBoxPassword.TabIndex = 11;
@@ -156,7 +157,7 @@ namespace RentABike
             // buttonSignup
             // 
             this.buttonSignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSignup.Location = new System.Drawing.Point(155, 350);
+            this.buttonSignup.Location = new System.Drawing.Point(172, 380);
             this.buttonSignup.Name = "buttonSignup";
             this.buttonSignup.Size = new System.Drawing.Size(146, 44);
             this.buttonSignup.TabIndex = 12;
@@ -168,7 +169,8 @@ namespace RentABike
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(842, 485);
             this.Controls.Add(this.buttonSignup);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.labelPassword);
@@ -182,6 +184,7 @@ namespace RentABike
             this.Controls.Add(this.labelSurname);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelName);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Signup";
             this.Text = "Signup";
             this.ResumeLayout(false);
