@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentABike", "RentABike\Rent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{2E97EF1D-FB32-44E7-BC14-D2F75EA4DD55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{61205097-C6AB-453E-8955-703156A41872}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2E97EF1D-FB32-44E7-BC14-D2F75EA4DD55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E97EF1D-FB32-44E7-BC14-D2F75EA4DD55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E97EF1D-FB32-44E7-BC14-D2F75EA4DD55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61205097-C6AB-453E-8955-703156A41872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61205097-C6AB-453E-8955-703156A41872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61205097-C6AB-453E-8955-703156A41872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61205097-C6AB-453E-8955-703156A41872}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
