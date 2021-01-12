@@ -97,7 +97,6 @@ namespace DataAccessLayer
                 return sqlCommand.ExecuteNonQuery();
             }
         }
-
         public int CheckUser(User u)
         {
             using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
@@ -108,6 +107,21 @@ namespace DataAccessLayer
                     "SELECT COUNT (*) FROM Users WHERE Email = " + u.Email + "AND Password = " + u.Password + "";
 
                 sqlConnection.Open();
+
+                return sqlCommand.ExecuteNonQuery();
+            }
+        }
+
+        public int DeleteUser(User d)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand sqlCommand = new SqlCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText =
+                   string.Format("DELETE FROM Users WHERE Email = '{0}'", d.Email);
 
                 return sqlCommand.ExecuteNonQuery();
             }
