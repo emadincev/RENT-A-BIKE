@@ -52,6 +52,23 @@ namespace BusinessLayer
             }
             return false;
         }
+        public bool UpdateUser(User up)
+        {
+            if (this.rentRepository.UpdateUser(up) > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool DeleteUser(User d)
+        {
+            if (this.rentRepository.DeleteUser(d) > 0)
+            {
+                return true;
+
+            }
+            return false;
+        }
 
     }
 }
