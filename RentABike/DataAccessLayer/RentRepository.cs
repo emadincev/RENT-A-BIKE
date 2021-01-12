@@ -126,5 +126,21 @@ namespace DataAccessLayer
                 return sqlCommand.ExecuteNonQuery();
             }
         }
+
+        public int UpdateUser(User up)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand sqlCommand = new SqlCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText =
+                   string.Format("UPDATE Users SET Address = '{0}', Telephone = '{1}', Email = '{2}', Password = '{3}' " +
+                   "WHERE Name = '{4}' AND Surname = '{5}'", up.Address, up.Telephone, up.Email, up.Password, up.Name, up.Surname);
+
+                return sqlCommand.ExecuteNonQuery();
+            }
+        }
     }
 }
