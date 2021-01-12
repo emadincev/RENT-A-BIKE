@@ -55,5 +55,35 @@ namespace RentABike
         {
             textBoxPassword.PasswordChar = '●';
         }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            User up = new User();
+            up.Name = textBoxName.Text;
+            up.Surname = textBoxSurname.Text;
+            up.Address = textBoxAddress.Text;
+            up.Telephone = textBoxTelephone.Text;
+            up.Email = textBoxEmail.Text;
+            up.Password = textBoxPassword.Text;
+
+            bool update = this.rentBusiness.UpdateUser(up);
+            if(update)
+            {
+                MessageBox.Show("Successful update!");
+                textBoxName.Text = "";
+                textBoxSurname.Text = "";
+                textBoxAddress.Text = "";
+                textBoxTelephone.Text = "";
+                textBoxEmail.Text = "";
+                textBoxPassword.Text = "";
+
+                Login l = new Login();
+                l.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Update failed!");
+            }
+        }
     }
 }

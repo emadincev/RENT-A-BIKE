@@ -53,5 +53,23 @@ namespace RentABike
         {
             textBoxPassword.PasswordChar = '●';
         }
+
+        private void buttonDeleteUser_Click(object sender, EventArgs e)
+        {
+            User d = new User();
+            d.Email = textBoxEmail.Text;
+            bool delete = this.rentBusiness.DeleteUser(d);
+            if(delete)
+            {
+                List<User> users = this.rentBusiness.GetAllUsers();
+                MessageBox.Show("Successfully delete user!");
+                textBoxEmail.Text = "";
+                Application.Exit();
+            }
+            else
+            {
+                MessageBox.Show("You could not delete the user!");
+            }
+        }
     }
 }

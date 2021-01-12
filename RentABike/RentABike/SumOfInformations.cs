@@ -1,4 +1,5 @@
 ﻿using BusinessLayer;
+using DataAccessLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,8 +40,18 @@ namespace RentABike
 
         private void buttonRent_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("You have successfully rented a bicycle / scooter!");
-            Application.Exit();
+            Product p = new Product();
+            p.Type = labelType.Text;
+            bool product = this.rentBusiness.InsertProduct(p);
+            if(product)
+            {
+                MessageBox.Show("You have successfully rented a bicycle / scooter!");
+                Application.Exit();
+            }
+            else
+            {
+                MessageBox.Show("Error!");
+            }
         }
     }
 }

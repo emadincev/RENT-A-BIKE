@@ -43,6 +43,7 @@ namespace RentABike
             this.labelPassword = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonSignup = new System.Windows.Forms.Button();
+            this.buttonUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelName
@@ -157,13 +158,24 @@ namespace RentABike
             // buttonSignup
             // 
             this.buttonSignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSignup.Location = new System.Drawing.Point(172, 380);
+            this.buttonSignup.Location = new System.Drawing.Point(50, 372);
             this.buttonSignup.Name = "buttonSignup";
-            this.buttonSignup.Size = new System.Drawing.Size(146, 44);
+            this.buttonSignup.Size = new System.Drawing.Size(145, 45);
             this.buttonSignup.TabIndex = 12;
             this.buttonSignup.Text = "Sign up";
             this.buttonSignup.UseVisualStyleBackColor = true;
             this.buttonSignup.Click += new System.EventHandler(this.buttonSignup_Click);
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUpdate.Location = new System.Drawing.Point(236, 373);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(145, 45);
+            this.buttonUpdate.TabIndex = 13;
+            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // Signup
             // 
@@ -171,6 +183,7 @@ namespace RentABike
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(842, 485);
+            this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonSignup);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.labelPassword);
@@ -207,5 +220,6 @@ namespace RentABike
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button buttonSignup;
+        private System.Windows.Forms.Button buttonUpdate;
     }
 }

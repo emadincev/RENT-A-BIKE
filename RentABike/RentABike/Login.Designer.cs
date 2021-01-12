@@ -35,6 +35,7 @@
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.buttonSignup = new System.Windows.Forms.Button();
+            this.buttonDeleteUser = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelEmail
@@ -98,12 +99,24 @@
             this.buttonSignup.UseVisualStyleBackColor = true;
             this.buttonSignup.Click += new System.EventHandler(this.buttonSignup_Click);
             // 
+            // buttonDeleteUser
+            // 
+            this.buttonDeleteUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDeleteUser.Location = new System.Drawing.Point(505, 233);
+            this.buttonDeleteUser.Name = "buttonDeleteUser";
+            this.buttonDeleteUser.Size = new System.Drawing.Size(130, 40);
+            this.buttonDeleteUser.TabIndex = 6;
+            this.buttonDeleteUser.Text = "Delete";
+            this.buttonDeleteUser.UseVisualStyleBackColor = true;
+            this.buttonDeleteUser.Click += new System.EventHandler(this.buttonDeleteUser_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(747, 445);
+            this.Controls.Add(this.buttonDeleteUser);
             this.Controls.Add(this.buttonSignup);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.textBoxPassword);
@@ -126,6 +139,7 @@
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.Button buttonSignup;
+        private System.Windows.Forms.Button buttonDeleteUser;
     }
 }
 
